@@ -1,0 +1,29 @@
+{
+  "name": "motion-canvas-next-video",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "serve": "vite",
+    "serve:doom": "VITE_SCENE=doom-emacs-intro vite",
+    "serve:nixos": "VITE_SCENE=nixos-btw vite",
+    "serve:neorg": "VITE_SCENE=neorg-what-is vite",
+    "serve:obsidian": "VITE_SCENE=obsidian-neorg vite",
+    "build": "tsc && vite build",
+    "build:doom": "tsc && VITE_SCENE=doom-emacs-intro vite build",
+    "build:nixos": "tsc && VITE_SCENE=nixos-btw vite build",
+    "build:neorg": "tsc && VITE_SCENE=neorg-what-is vite build",
+    "build:obsidian": "tsc && VITE_SCENE=obsidian-neorg vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/core": "^3.17.2",
+    "@motion-canvas/2d": "^3.17.2",
+    "@motion-canvas/ffmpeg": "^1.1.0"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.17.2",
+    "@motion-canvas/vite-plugin": "^3.17.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.0.0"
+  }
+}
